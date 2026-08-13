@@ -1,15 +1,21 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WBPROmotionGroup — Продвижение на Wildberries</title>
-    <meta name="description" content="Премиальное продвижение товаров на Wildberries. Команда из 5 экспертов увеличит ваши продажи на маркетплейсе.">
+    <meta name="description"
+        content="Премиальное продвижение товаров на Wildberries. Команда из 5 экспертов увеличит ваши продажи на маркетплейсе.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Playfair+Display:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Playfair+Display:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
     <style>
-        *, *::before, *::after {
+        *,
+        *::before,
+        *::after {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
@@ -44,7 +50,9 @@
             --transition: all 0.35s cubic-bezier(0.25, 0.46, 0.45, 0.94);
         }
 
-        html { scroll-behavior: smooth; }
+        html {
+            scroll-behavior: smooth;
+        }
 
         body {
             font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
@@ -54,13 +62,17 @@
             overflow-x: hidden;
         }
 
-        .serif { font-family: 'Playfair Display', Georgia, serif; }
+        .serif {
+            font-family: 'Playfair Display', Georgia, serif;
+        }
 
         /* ===== Background ===== */
         .bg-animation {
             position: fixed;
-            top: 0; left: 0;
-            width: 100%; height: 100%;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
             z-index: 0;
             pointer-events: none;
         }
@@ -74,29 +86,45 @@
         }
 
         .bg-orb--1 {
-            width: 700px; height: 700px;
+            width: 700px;
+            height: 700px;
             background: radial-gradient(circle, #1A2036, transparent);
-            top: -300px; right: -200px;
+            top: -300px;
+            right: -200px;
         }
 
         .bg-orb--2 {
-            width: 500px; height: 500px;
+            width: 500px;
+            height: 500px;
             background: radial-gradient(circle, rgba(201, 169, 110, 0.3), transparent);
-            bottom: -200px; left: -100px;
+            bottom: -200px;
+            left: -100px;
             animation-delay: -10s;
         }
 
         .bg-orb--3 {
-            width: 300px; height: 300px;
+            width: 300px;
+            height: 300px;
             background: radial-gradient(circle, rgba(201, 169, 110, 0.15), transparent);
-            top: 40%; left: 60%;
+            top: 40%;
+            left: 60%;
             animation-delay: -18s;
         }
 
         @keyframes floatOrb {
-            0%, 100% { transform: translate(0, 0) scale(1); }
-            33% { transform: translate(40px, -30px) scale(1.05); }
-            66% { transform: translate(-30px, 40px) scale(0.95); }
+
+            0%,
+            100% {
+                transform: translate(0, 0) scale(1);
+            }
+
+            33% {
+                transform: translate(40px, -30px) scale(1.05);
+            }
+
+            66% {
+                transform: translate(-30px, 40px) scale(0.95);
+            }
         }
 
         /* ===== Layout ===== */
@@ -119,7 +147,9 @@
         /* ===== Navigation ===== */
         .navbar {
             position: fixed;
-            top: 0; left: 0; right: 0;
+            top: 0;
+            left: 0;
+            right: 0;
             z-index: 1000;
             padding: 20px 0;
             transition: var(--transition);
@@ -147,7 +177,8 @@
         }
 
         .logo-mark {
-            width: 40px; height: 40px;
+            width: 40px;
+            height: 40px;
             border: 1.5px solid var(--gold);
             border-radius: 10px;
             display: flex;
@@ -220,7 +251,9 @@
             color: var(--dark-bg) !important;
         }
 
-        .nav-cta::after { display: none !important; }
+        .nav-cta::after {
+            display: none !important;
+        }
 
         .mobile-toggle {
             display: none;
@@ -270,15 +303,25 @@
         }
 
         .hero-label .pulse {
-            width: 6px; height: 6px;
+            width: 6px;
+            height: 6px;
             background: var(--gold);
             border-radius: 50%;
             animation: pulseDot 2s infinite;
         }
 
         @keyframes pulseDot {
-            0%, 100% { opacity: 1; transform: scale(1); }
-            50% { opacity: 0.4; transform: scale(0.8); }
+
+            0%,
+            100% {
+                opacity: 1;
+                transform: scale(1);
+            }
+
+            50% {
+                opacity: 0.4;
+                transform: scale(0.8);
+            }
         }
 
         .hero h1 {
@@ -381,7 +424,9 @@
         .hero-card::before {
             content: '';
             position: absolute;
-            top: 0; left: 0; right: 0;
+            top: 0;
+            left: 0;
+            right: 0;
             height: 2px;
             background: var(--gold-gradient);
         }
@@ -394,7 +439,8 @@
         }
 
         .hero-card-icon {
-            width: 44px; height: 44px;
+            width: 44px;
+            height: 44px;
             border: 1px solid var(--gold);
             border-radius: 10px;
             display: flex;
@@ -490,7 +536,9 @@
             opacity: 0.6;
         }
 
-        .chart-bar:hover { opacity: 1; }
+        .chart-bar:hover {
+            opacity: 1;
+        }
 
         .float-badge {
             position: absolute;
@@ -506,21 +554,32 @@
         }
 
         .float-badge--1 {
-            top: 10px; right: -30px;
+            top: 10px;
+            right: -30px;
             animation-delay: -2s;
         }
 
         .float-badge--2 {
-            bottom: 40px; left: -30px;
+            bottom: 40px;
+            left: -30px;
             animation-delay: -4s;
         }
 
         @keyframes floatBadge {
-            0%, 100% { transform: translateY(0); }
-            50% { transform: translateY(-8px); }
+
+            0%,
+            100% {
+                transform: translateY(0);
+            }
+
+            50% {
+                transform: translateY(-8px);
+            }
         }
 
-        .float-icon { font-size: 22px; }
+        .float-icon {
+            font-size: 22px;
+        }
 
         .float-title {
             font-size: 13px;
@@ -534,13 +593,27 @@
         }
 
         @keyframes fadeUp {
-            from { opacity: 0; transform: translateY(30px); }
-            to { opacity: 1; transform: translateY(0); }
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
         }
 
         @keyframes fadeRight {
-            from { opacity: 0; transform: translateX(40px); }
-            to { opacity: 1; transform: translateX(0); }
+            from {
+                opacity: 0;
+                transform: translateX(40px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
         }
 
         /* ===== Clients Strip ===== */
@@ -582,7 +655,9 @@
         }
 
         /* ===== Sections ===== */
-        .section { padding: 110px 0; }
+        .section {
+            padding: 110px 0;
+        }
 
         .section-label {
             display: inline-flex;
@@ -641,7 +716,9 @@
         .service-card::after {
             content: '';
             position: absolute;
-            top: 0; left: 0; right: 0;
+            top: 0;
+            left: 0;
+            right: 0;
             height: 1px;
             background: var(--gold-gradient);
             opacity: 0;
@@ -654,10 +731,13 @@
             transform: translateY(-6px);
         }
 
-        .service-card:hover::after { opacity: 1; }
+        .service-card:hover::after {
+            opacity: 1;
+        }
 
         .service-icon {
-            width: 52px; height: 52px;
+            width: 52px;
+            height: 52px;
             border: 1px solid var(--dark-border);
             border-radius: 10px;
             display: flex;
@@ -730,16 +810,21 @@
             content: '';
             position: absolute;
             top: 32px;
-            left: 60px; right: 60px;
+            left: 60px;
+            right: 60px;
             height: 1px;
             background: linear-gradient(90deg, transparent, var(--gold), transparent);
             opacity: 0.2;
         }
 
-        .step-card { text-align: center; position: relative; }
+        .step-card {
+            text-align: center;
+            position: relative;
+        }
 
         .step-num {
-            width: 64px; height: 64px;
+            width: 64px;
+            height: 64px;
             border: 1px solid var(--gold);
             border-radius: 50%;
             display: flex;
@@ -796,7 +881,9 @@
         .team-card::before {
             content: '';
             position: absolute;
-            top: 0; left: 0; right: 0;
+            top: 0;
+            left: 0;
+            right: 0;
             height: 2px;
             background: var(--gold-gradient);
             opacity: 0;
@@ -808,10 +895,13 @@
             transform: translateY(-6px);
         }
 
-        .team-card:hover::before { opacity: 1; }
+        .team-card:hover::before {
+            opacity: 1;
+        }
 
         .team-avatar {
-            width: 140px; height: 140px;
+            width: 140px;
+            height: 140px;
             border-radius: 50%;
             object-fit: cover;
             margin-bottom: 24px;
@@ -870,7 +960,8 @@
         }
 
         .team-tg svg {
-            width: 16px; height: 16px;
+            width: 16px;
+            height: 16px;
             fill: currentColor;
         }
 
@@ -910,7 +1001,8 @@
         }
 
         .team-group-link svg {
-            width: 18px; height: 18px;
+            width: 18px;
+            height: 18px;
             fill: currentColor;
         }
 
@@ -939,7 +1031,8 @@
         .price-card.featured::before {
             content: 'Популярный';
             position: absolute;
-            top: -12px; left: 50%;
+            top: -12px;
+            left: 50%;
             transform: translateX(-50%);
             background: var(--gold);
             color: var(--dark-bg);
@@ -1073,10 +1166,13 @@
             transition: var(--transition);
         }
 
-        .faq-q:hover { color: var(--gold); }
+        .faq-q:hover {
+            color: var(--gold);
+        }
 
         .faq-toggle {
-            width: 28px; height: 28px;
+            width: 28px;
+            height: 28px;
             border: 1px solid var(--dark-border);
             border-radius: 50%;
             display: flex;
@@ -1110,7 +1206,9 @@
         }
 
         /* ===== CTA ===== */
-        .cta-section { padding: 110px 0; }
+        .cta-section {
+            padding: 110px 0;
+        }
 
         .cta-box {
             background: var(--dark-card);
@@ -1125,7 +1223,9 @@
         .cta-box::before {
             content: '';
             position: absolute;
-            top: 0; left: 0; right: 0;
+            top: 0;
+            left: 0;
+            right: 0;
             height: 2px;
             background: var(--gold-gradient);
         }
@@ -1133,12 +1233,18 @@
         .cta-box::after {
             content: '';
             position: absolute;
-            top: 0; left: 0; right: 0; bottom: 0;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
             background: radial-gradient(ellipse at top, rgba(201, 169, 110, 0.04), transparent 70%);
             pointer-events: none;
         }
 
-        .cta-box > * { position: relative; z-index: 1; }
+        .cta-box>* {
+            position: relative;
+            z-index: 1;
+        }
 
         .cta-box h2 {
             font-family: 'Playfair Display', serif;
@@ -1181,12 +1287,14 @@
 
         .footer-grid {
             display: grid;
-            grid-template-columns: 2fr 1fr 1fr 1fr;
-            gap: 40px;
+            grid-template-columns: 1.8fr 1fr 1fr 1fr 1.2fr;
+            gap: 32px;
             margin-bottom: 48px;
         }
 
-        .footer-about .logo { margin-bottom: 16px; }
+        .footer-about .logo {
+            margin-bottom: 16px;
+        }
 
         .footer-about p {
             font-size: 14px;
@@ -1201,7 +1309,8 @@
         }
 
         .social-link {
-            width: 38px; height: 38px;
+            width: 38px;
+            height: 38px;
             border: 1px solid var(--dark-border);
             border-radius: 6px;
             display: flex;
@@ -1228,9 +1337,15 @@
             color: var(--gold);
         }
 
-        .footer-col ul { list-style: none; }
+        .footer-col ul {
+            list-style: none;
+        }
 
-        .footer-col li { margin-bottom: 10px; }
+        .footer-col li {
+            margin-bottom: 10px;
+            font-size: 14px;
+            color: var(--text-secondary);
+        }
 
         .footer-col a {
             font-size: 14px;
@@ -1239,7 +1354,20 @@
             transition: var(--transition);
         }
 
-        .footer-col a:hover { color: var(--gold-light); }
+        .footer-col a:hover {
+            color: var(--gold-light);
+        }
+
+        .footer-requisites ul li {
+            font-size: 13px;
+            line-height: 1.6;
+            margin-bottom: 6px;
+        }
+
+        .footer-requisites .req-label {
+            color: var(--text-muted);
+            margin-right: 4px;
+        }
 
         .footer-bottom {
             border-top: 1px solid var(--dark-border);
@@ -1251,9 +1379,19 @@
             gap: 16px;
         }
 
+        .footer-bottom-info {
+            display: flex;
+            flex-direction: column;
+            gap: 6px;
+        }
+
         .footer-bottom p {
             font-size: 12px;
             color: var(--text-muted);
+        }
+
+        .footer-bottom p.ip-details {
+            color: var(--text-secondary);
         }
 
         /* ===== Reveal Animation ===== */
@@ -1274,27 +1412,57 @@
                 grid-template-columns: 1fr;
                 text-align: center;
             }
-            .hero-desc { margin: 0 auto 44px; }
-            .hero-actions { justify-content: center; }
-            .hero-visual { order: -1; }
-            .hero-card { max-width: 380px; }
-            .services-grid { grid-template-columns: repeat(2, 1fr); }
-            .stats-grid { grid-template-columns: repeat(2, 1fr); }
-            .steps-grid { grid-template-columns: repeat(2, 1fr); }
-            .steps-grid::before { display: none; }
+
+            .hero-desc {
+                margin: 0 auto 44px;
+            }
+
+            .hero-actions {
+                justify-content: center;
+            }
+
+            .hero-visual {
+                order: -1;
+            }
+
+            .hero-card {
+                max-width: 380px;
+            }
+
+            .services-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .stats-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .steps-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .steps-grid::before {
+                display: none;
+            }
+
             .pricing-grid {
                 grid-template-columns: 1fr;
                 max-width: 420px;
                 margin: 0 auto;
             }
-            .footer-grid { grid-template-columns: 1fr 1fr; }
+
+            .footer-grid {
+                grid-template-columns: 1fr 1fr;
+            }
         }
 
         @media (max-width: 768px) {
             .nav-links {
                 display: none;
                 position: absolute;
-                top: 100%; left: 0; right: 0;
+                top: 100%;
+                left: 0;
+                right: 0;
                 background: rgba(10, 12, 16, 0.98);
                 backdrop-filter: blur(20px);
                 flex-direction: column;
@@ -1302,28 +1470,58 @@
                 gap: 16px;
                 border-bottom: 1px solid var(--dark-border);
             }
-            .nav-links.open { display: flex; }
-            .mobile-toggle { display: flex; }
+
+            .nav-links.open {
+                display: flex;
+            }
+
+            .mobile-toggle {
+                display: flex;
+            }
+
             .services-grid,
-            .team-layout { grid-template-columns: 1fr; }
-            .stats-grid { grid-template-columns: 1fr 1fr; }
+            .team-layout {
+                grid-template-columns: 1fr;
+            }
+
+            .stats-grid {
+                grid-template-columns: 1fr 1fr;
+            }
+
             .steps-grid {
                 grid-template-columns: 1fr;
                 max-width: 300px;
                 margin: 0 auto;
             }
-            .hero-card { max-width: 100%; }
-            .cta-box { padding: 48px 24px; }
-            .float-badge { display: none; }
-            .footer-grid { grid-template-columns: 1fr; }
+
+            .hero-card {
+                max-width: 100%;
+            }
+
+            .cta-box {
+                padding: 48px 24px;
+            }
+
+            .float-badge {
+                display: none;
+            }
+
+            .footer-grid {
+                grid-template-columns: 1fr;
+            }
+
             .footer-bottom {
                 flex-direction: column;
                 text-align: center;
             }
-            .team-layout { max-width: 420px; }
+
+            .team-layout {
+                max-width: 420px;
+            }
         }
     </style>
 </head>
+
 <body>
     <!-- Background -->
     <div class="bg-animation">
@@ -1363,10 +1561,14 @@
                     Рекламное агентство Wildberries
                 </div>
                 <h1>Премиальное<br>продвижение на<br><span class="gold">Wildberries</span></h1>
-                <p class="hero-desc">Команда из 5 экспертов берёт на себя весь цикл продвижения — от аналитики ниши до вывода в ТОП. Индивидуальный подход к каждому продавцу.</p>
+                <p class="hero-desc">Команда из 5 экспертов берёт на себя весь цикл продвижения — от аналитики ниши до
+                    вывода в ТОП. Индивидуальный подход к каждому продавцу.</p>
                 <div class="hero-actions">
                     <a href="https://t.me/wbpromotiongroup" class="btn btn-gold" id="hero-cta-group">
-                        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.479.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/></svg>
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                            <path
+                                d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.479.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z" />
+                        </svg>
                         Наш Telegram
                     </a>
                     <a href="#services" class="btn btn-outline" id="hero-cta-more">Подробнее</a>
@@ -1505,7 +1707,8 @@
             <div class="section-header reveal">
                 <div class="section-label">— Процесс</div>
                 <h2 class="section-title">Как мы работаем</h2>
-                <p class="section-desc">Прозрачный и понятный процесс от первого контакта до стабильного роста продаж</p>
+                <p class="section-desc">Прозрачный и понятный процесс от первого контакта до стабильного роста продаж
+                </p>
             </div>
             <div class="steps-grid reveal">
                 <div class="step-card">
@@ -1538,16 +1741,21 @@
             <div class="section-header reveal">
                 <div class="section-label">— Команда</div>
                 <h2 class="section-title">Основатели агентства</h2>
-                <p class="section-desc">За каждым проектом стоят эксперты, которые лично контролируют качество и результаты</p>
+                <p class="section-desc">За каждым проектом стоят эксперты, которые лично контролируют качество и
+                    результаты</p>
             </div>
             <div class="team-layout reveal">
                 <div class="team-card">
                     <img src="images/aleksandra.png" alt="Александра" class="team-avatar">
                     <div class="team-name">Александра</div>
                     <div class="team-role">Основатель · Старший менеджер</div>
-                    <p class="team-desc">Руководит стратегическим развитием агентства. Лично ведёт ключевые проекты и отвечает за результат каждого клиента</p>
+                    <p class="team-desc">Руководит стратегическим развитием агентства. Лично ведёт ключевые проекты и
+                        отвечает за результат каждого клиента</p>
                     <a href="https://t.me/AleksaSobolevaa" class="team-tg" id="team-tg-aleksandra">
-                        <svg viewBox="0 0 24 24"><path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.479.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/></svg>
+                        <svg viewBox="0 0 24 24">
+                            <path
+                                d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.479.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z" />
+                        </svg>
                         @AleksaSobolevaa
                     </a>
                 </div>
@@ -1555,17 +1763,26 @@
                     <img src="images/nataliya.png" alt="Наталия" class="team-avatar">
                     <div class="team-name">Наталия</div>
                     <div class="team-role">Сооснователь · Старший менеджер</div>
-                    <p class="team-desc">Отвечает за рекламные кампании и аналитику. Выстраивает системный подход к продвижению каждого магазина</p>
+                    <p class="team-desc">Отвечает за рекламные кампании и аналитику. Выстраивает системный подход к
+                        продвижению каждого магазина</p>
                     <a href="https://t.me/nattyllya" class="team-tg" id="team-tg-nataliya">
-                        <svg viewBox="0 0 24 24"><path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.479.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/></svg>
+                        <svg viewBox="0 0 24 24">
+                            <path
+                                d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.479.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z" />
+                        </svg>
                         @nattyllya
                     </a>
                 </div>
             </div>
             <div class="team-info reveal">
-                <p>В нашей команде <strong>5 экспертов</strong>, каждый из которых специализируется на своём направлении: SEO, реклама, аналитика, контент и стратегия. Загляните в наш Telegram-канал, чтобы познакомиться с нашими работами и жизнью команды.</p>
+                <p>В нашей команде <strong>5 экспертов</strong>, каждый из которых специализируется на своём
+                    направлении: SEO, реклама, аналитика, контент и стратегия. Загляните в наш Telegram-канал, чтобы
+                    познакомиться с нашими работами и жизнью команды.</p>
                 <a href="https://t.me/wbpromotiongroup" class="team-group-link" id="team-group-link">
-                    <svg viewBox="0 0 24 24"><path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.479.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/></svg>
+                    <svg viewBox="0 0 24 24">
+                        <path
+                            d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.479.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z" />
+                    </svg>
                     Наш канал @wbpromotiongroup
                 </a>
             </div>
@@ -1593,7 +1810,8 @@
                         <li>Работа с отзывами</li>
                         <li>Поддержка в Telegram</li>
                     </ul>
-                    <a href="https://t.me/AleksaSobolevaa" class="price-btn price-btn-outline" id="price-start">Обсудить</a>
+                    <a href="https://t.me/AleksaSobolevaa" class="price-btn price-btn-outline"
+                        id="price-start">Обсудить</a>
                 </div>
                 <div class="price-card featured">
                     <div class="price-name">Рост</div>
@@ -1608,7 +1826,8 @@
                         <li>Персональный менеджер</li>
                         <li>Ежедневные отчёты</li>
                     </ul>
-                    <a href="https://t.me/AleksaSobolevaa" class="price-btn price-btn-gold" id="price-growth">Обсудить</a>
+                    <a href="https://t.me/AleksaSobolevaa" class="price-btn price-btn-gold"
+                        id="price-growth">Обсудить</a>
                 </div>
                 <div class="price-card">
                     <div class="price-name">Масштаб</div>
@@ -1623,14 +1842,16 @@
                         <li>Выделенная команда</li>
                         <li>Приоритетная поддержка 24/7</li>
                     </ul>
-                    <a href="https://t.me/AleksaSobolevaa" class="price-btn price-btn-outline" id="price-scale">Обсудить</a>
+                    <a href="https://t.me/AleksaSobolevaa" class="price-btn price-btn-outline"
+                        id="price-scale">Обсудить</a>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- FAQ -->
-    <section class="section" id="faq" style="background: var(--dark-surface); border-top: 1px solid var(--dark-border); border-bottom: 1px solid var(--dark-border);">
+    <section class="section" id="faq"
+        style="background: var(--dark-surface); border-top: 1px solid var(--dark-border); border-bottom: 1px solid var(--dark-border);">
         <div class="container">
             <div class="section-header reveal">
                 <div class="section-label">— Вопросы</div>
@@ -1643,7 +1864,8 @@
                         <span class="faq-toggle">+</span>
                     </button>
                     <div class="faq-a">
-                        <p>Первые результаты заметны через 1–2 недели. Устойчивый рост продаж — спустя 4–6 недель. За 3 месяца мы в среднем увеличиваем продажи в 3–5 раз.</p>
+                        <p>Первые результаты заметны через 1–2 недели. Устойчивый рост продаж — спустя 4–6 недель. За 3
+                            месяца мы в среднем увеличиваем продажи в 3–5 раз.</p>
                     </div>
                 </div>
                 <div class="faq-item">
@@ -1652,7 +1874,8 @@
                         <span class="faq-toggle">+</span>
                     </button>
                     <div class="faq-a">
-                        <p>Рекомендуемый бюджет — от 30 000 ₽ в месяц для внутренней рекламы. Точную сумму определим после анализа вашей ниши и конкурентов.</p>
+                        <p>Рекомендуемый бюджет — от 30 000 ₽ в месяц для внутренней рекламы. Точную сумму определим
+                            после анализа вашей ниши и конкурентов.</p>
                     </div>
                 </div>
                 <div class="faq-item">
@@ -1661,7 +1884,8 @@
                         <span class="faq-toggle">+</span>
                     </button>
                     <div class="faq-a">
-                        <p>Нет. Мы берём на себя всю работу. Вам нужно лишь предоставить доступ к кабинету WB и согласовать стратегию.</p>
+                        <p>Нет. Мы берём на себя всю работу. Вам нужно лишь предоставить доступ к кабинету WB и
+                            согласовать стратегию.</p>
                     </div>
                 </div>
                 <div class="faq-item">
@@ -1670,7 +1894,8 @@
                         <span class="faq-toggle">+</span>
                     </button>
                     <div class="faq-a">
-                        <p>Да. Мы помогаем новичкам с нуля: от регистрации на площадке до первых продаж. Тариф «Старт» создан именно для этого.</p>
+                        <p>Да. Мы помогаем новичкам с нуля: от регистрации на площадке до первых продаж. Тариф «Старт»
+                            создан именно для этого.</p>
                     </div>
                 </div>
                 <div class="faq-item">
@@ -1679,7 +1904,8 @@
                         <span class="faq-toggle">+</span>
                     </button>
                     <div class="faq-a">
-                        <p>Регулярные отчёты с ключевыми метриками: продажи, выручка, позиции, ROI. Ваш менеджер всегда на связи в Telegram.</p>
+                        <p>Регулярные отчёты с ключевыми метриками: продажи, выручка, позиции, ROI. Ваш менеджер всегда
+                            на связи в Telegram.</p>
                     </div>
                 </div>
             </div>
@@ -1691,7 +1917,9 @@
         <div class="container">
             <div class="cta-box reveal">
                 <div class="gold-line"></div>
-                <h2>Готовы увеличить продажи<br>на <span class="gold" style="background: var(--gold-gradient-text); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">Wildberries</span>?</h2>
+                <h2>Готовы увеличить продажи<br>на <span class="gold"
+                        style="background: var(--gold-gradient-text); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">Wildberries</span>?
+                </h2>
                 <p>Напишите нам — проведём бесплатный аудит вашего магазина и предложим стратегию роста</p>
                 <div class="cta-actions">
                     <a href="https://t.me/AleksaSobolevaa" class="btn btn-gold" id="cta-aleksandra">
@@ -1701,7 +1929,10 @@
                         Написать Наталии
                     </a>
                     <a href="https://t.me/wbpromotiongroup" class="btn btn-tg-blue" id="cta-group">
-                        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.479.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/></svg>
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                            <path
+                                d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.479.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z" />
+                        </svg>
                         Наша группа
                     </a>
                 </div>
@@ -1718,9 +1949,11 @@
                         <div class="logo-mark">WB</div>
                         <div class="logo-text">WBPROmotionGroup</div>
                     </a>
-                    <p>WBPROmotionGroup — рекламное агентство, специализирующееся на продвижении товаров на Wildberries. Помогаем продавцам выйти на новый уровень продаж.</p>
+                    <p>WBPROmotionGroup — рекламное агентство, специализирующееся на продвижении товаров на Wildberries.
+                        Помогаем продавцам выйти на новый уровень продаж.</p>
                     <div class="footer-social">
-                        <a href="https://t.me/wbpromotiongroup" class="social-link" id="footer-tg" title="Telegram">✈️</a>
+                        <a href="https://t.me/wbpromotiongroup" class="social-link" id="footer-tg"
+                            title="Telegram">✈️</a>
                         <a href="https://t.me/AleksaSobolevaa" class="social-link" title="Александра">👤</a>
                         <a href="https://t.me/nattyllya" class="social-link" title="Наталия">👤</a>
                     </div>
@@ -1751,10 +1984,23 @@
                         <li><a href="https://t.me/nattyllya">@nattyllya</a></li>
                     </ul>
                 </div>
+                <div class="footer-col footer-requisites">
+                    <h4>Реквизиты</h4>
+                    <ul>
+                        <li><span class="req-label">ИП:</span> Соболева А. С.</li>
+                        <li><span class="req-label">ИНН:</span> 180201418112</li>
+                        <li><span class="req-label">ОГРНИП:</span> 323508100458867</li>
+                        <li><span class="req-label">Регистрация:</span> 30.08.2023</li>
+                        <li><span class="req-label">ОКВЭД:</span> 47.91</li>
+                    </ul>
+                </div>
             </div>
             <div class="footer-bottom">
-                <p>© 2024 WBPROmotionGroup — Рекламное агентство на Wildberries</p>
-                <p>Wildberries — зарегистрированный товарный знак</p>
+                <div class="footer-bottom-info">
+                    <p>© 2024 WBPROmotionGroup — Рекламное агентство на Wildberries</p>
+                    <p class="ip-details">Индивидуальный предприниматель Соболева Александра Сергеевна | ИНН: 180201418112 | ОГРНИП: 323508100458867</p>
+                    <p>Wildberries — зарегистрированный товарный знак</p>
+                </div>
             </div>
         </div>
     </footer>
@@ -1825,7 +2071,7 @@
 
         // Smooth scroll
         document.querySelectorAll('a[href^="#"]').forEach(a => {
-            a.addEventListener('click', function(e) {
+            a.addEventListener('click', function (e) {
                 e.preventDefault();
                 const t = document.querySelector(this.getAttribute('href'));
                 if (t) t.scrollIntoView({ behavior: 'smooth', block: 'start' });
@@ -1833,4 +2079,5 @@
         });
     </script>
 </body>
+
 </html>
